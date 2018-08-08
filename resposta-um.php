@@ -5,6 +5,7 @@ namespace App\Simples;
 /**
  *  Classe: Bissexto
  *  Verifica se ano é Bissexto
+ *  Usando uma função nativa do PHP para contar quantos dias existem em um determinado mês.
  */
 
 class Simples
