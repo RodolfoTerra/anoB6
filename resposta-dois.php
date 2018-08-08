@@ -23,9 +23,18 @@ class Normal
 	private function setAno ()
 	{
 		/* EX: /?ano=2018 */
-		$this->anoAtual = $_REQUEST['ano'];
 
-		$this::condicaoAno();
+		if(isset($_REQUEST['ano'])){
+			
+			$this->anoAtual = $_REQUEST['ano'];
+
+			$this::condicaoAno();
+		}else{
+
+			$this->anoAtual = 0;
+			
+			$this::getNormal();
+		}
 	}
 
 
@@ -57,7 +66,14 @@ class Normal
 	public function getNormal ()
 	{
 
-		print_r($this->anoAtual . " é " . $this->bissexto);
+		if($this->anoAtual > 0){
+
+			print_r($this->anoAtual . " é " . $this->bissexto);
+		}else{
+
+			print_r("Adicione o ano com método GET e variável ano como EX: /?ano=2018");
+		}
+
 
 		return $this->bissexto;
 	}

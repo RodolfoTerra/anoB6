@@ -17,15 +17,26 @@ class Simples
 	
 	function __construct()
 	{
+		
 		$this::setAno();
 	}
 
 	private function setAno ()
 	{
 		/* EX: /?ano=2018 */
-		$this->anoAtual = $_REQUEST['ano'];
+		
+		if(isset($_REQUEST['ano'])){
+			
+			$this->anoAtual = $_REQUEST['ano'];
 
-		$this::setDias();
+			$this::setDias();
+		}else{
+
+			$this->anoAtual = 0;
+
+			$this::getSimples();
+		}
+		
 	}
 
 
@@ -41,6 +52,7 @@ class Simples
 	public function getSimples ()
 	{
 
+
 		switch ($this->diasMes) {
 			case 29:
 
@@ -55,7 +67,14 @@ class Simples
 				break;
 		}	
 
-		print_r($this->anoAtual . " é " . $this->bissexto);
+		if($this->anoAtual > 0){
+
+			print_r($this->anoAtual . " é " . $this->bissexto);
+		}else{
+
+			print_r("Adicione o ano com método GET e variável ano como EX: /?ano=2018");
+		}
+
 
 		return $this->bissexto;
 	}
