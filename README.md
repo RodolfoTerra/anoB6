@@ -1,10 +1,8 @@
-# anoB6
+# anoB6 - Ano  Bissexto
 
 PHP 7.0
 
 Feito em ambiente docker com apache
-
-Ano  Bissexto
 
 (Duas formas diferentes de chegar a mesma solução)
 
