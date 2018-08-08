@@ -13,7 +13,7 @@ class Simples
 
 	private $anoAtual = 0;
 	private $bissexto = "";
-	private $diasMes = 0;
+	private $diasMes  = 0;
 	
 	function __construct()
 	{
