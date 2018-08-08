@@ -8,4 +8,4 @@ Primeira (resposta-um.php)
 - Usando uma função nativa do PHP para contar quantos dias existem em um determinado mês.
 
 Segunda (resposta-dois.php)
-- Usando a regra lógica do exercício com as regras para determinar se o ano é bissexto.
+- Usando a lógica do exercício com as regras para determinar se o ano é bissexto.
