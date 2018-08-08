@@ -43,13 +43,13 @@ class Simples
 
 		switch ($this->diasMes) {
 			case 29:
-				# code...
+
 				$this->bissexto = "Bissexto";
 
 				break;
 			
 			default:
-				# code...
+
 				$this->bissexto = "Normal";
 
 				break;

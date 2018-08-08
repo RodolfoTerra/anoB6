@@ -41,9 +41,6 @@ class Normal
 		$testeTres = $this->anoAtual % 400;
 
 
-		//print_r($testeUm. "<br>");
-
-
 		if($testeUm === 0 && $testeDois != 0 || $testeTres === 0){
 			
 			$this->bissexto = "Bissexto";
