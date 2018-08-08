@@ -1,7 +1,13 @@
 # anoB6
 
+PHP 7.0
+
+Feito em ambiente docker com apache
+
 Ano  Bissexto
+
 (Duas formas diferentes de chegar a mesma solução)
+
 Desafio Dojo Puzzles: http://dojopuzzles.com/problemas/exibe/ano-bissexto/
 
 Primeira (resposta-um.php)
